@@ -902,6 +902,12 @@
             border: 1px solid rgba(37, 99, 235, 0.2);
         }
 
+        a.project-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
         .project-arrow {
             font-size: 18px;
             color: var(--text-muted);
@@ -971,6 +977,10 @@
 
         .skill-item {
             margin-bottom: 18px;
+        }
+
+        .skill-group .tag {
+            margin: 4px 8px 4px 0;
         }
 
         .skill-header {
@@ -1376,21 +1386,21 @@
                     Software Engineering student building AI-powered tools that make education smarter and more personal.
                 </p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary">View My Work →</button>
-                    <button class="btn btn-secondary">Download CV</button>
+                    <a href="#projects" class="btn btn-primary">View My Work →</a>
+                    <a href="Usman_Ayaz_CV.pdf" download class="btn btn-secondary">Download CV</a>
                 </div>
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <div class="hero-stat-number">1+</div>
-                        <div class="hero-stat-label">Major Project</div>
+                        <div class="hero-stat-number">3+</div>
+                        <div class="hero-stat-label">Major Projects</div>
                     </div>
                     <div class="hero-stat">
-                        <div class="hero-stat-number">4+</div>
+                        <div class="hero-stat-number">6+</div>
                         <div class="hero-stat-label">Tech Stacks</div>
                     </div>
                     <div class="hero-stat">
                         <div class="hero-stat-number">AI</div>
-                        <div class="hero-stat-label">Focus Area</div>
+                        <div class="hero-stat-label">AI & Mobile Focus</div>
                     </div>
                 </div>
             </div>
@@ -1424,7 +1434,7 @@
     <div class="about-highlight-label">// currently</div>
     <div class="about-highlight-content">
         👤 Usman Ayaz — usmansardar037@gmail.com<br/>
-        🎓 Final year, B.Sc. Software Engineering — [Your University]<br/>
+        🎓 Final year, BS Software Engineering — COMSATS University Islamabad<br/>
         🌍 Based in Pakistan<br/>
         🔨 Building AI-powered EdTech tools<br/>
         📚 Learning: System Design, ML fundamentals
@@ -1599,8 +1609,8 @@
                         </div>
                     </div>
                     <div class="featured-buttons">
-                        <button class="btn btn-primary">Live Demo →</button>
-                        <button class="btn btn-secondary">View on GitHub ↗</button>
+                        <a href="#" class="btn btn-primary">Live Demo →</a>
+                        <a href="https://github.com/UsmanSardar123/edumind" class="btn btn-secondary">View on GitHub ↗</a>
                     </div>
                 </div>
             </div>
@@ -1615,54 +1625,56 @@
                 <h2>More of My Work</h2>
             </div>
             <div class="projects-grid">
-                <div class="card project-card">
+                <a href="https://github.com/UsmanSardar123/time-explorer" class="card project-card">
                     <div class="project-header">
-                        <span class="project-type">Mobile App</span>
+                        <span class="project-type">Mobile App · AI</span>
                         <span class="project-arrow">↗</span>
                     </div>
-                    <h4 class="project-title">Project Alpha</h4>
+                    <h4 class="project-title">Time Explorer</h4>
                     <p class="project-desc">
-                        A brief description of what this project does and the problem it solves. 
-                        Focus on impact and technical challenge.
+                        A gamified, ~50-screen Flutter history app with a custom Node.js/Express backend and an 
+                        AI conversational layer for real-time Q&amp;A with historical personas across eras.
                     </p>
                     <div class="project-tags">
                         <span class="project-tag">Flutter</span>
                         <span class="project-tag">Firebase</span>
+                        <span class="project-tag">Gemini API</span>
+                        <span class="project-tag">BLoC</span>
+                    </div>
+                </a>
+                <a href="https://github.com/UsmanSardar123/smart-task-manager" class="card project-card">
+                    <div class="project-header">
+                        <span class="project-type">Mobile App</span>
+                        <span class="project-arrow">↗</span>
+                    </div>
+                    <h4 class="project-title">Smart Task Manager</h4>
+                    <p class="project-desc">
+                        A full CRUD task management app with offline-first storage, syncing local SQLite 
+                        data with Firebase and secure Firebase Authentication.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">Firebase</span>
                         <span class="project-tag">REST API</span>
                     </div>
-                </div>
-                <div class="card project-card">
+                </a>
+                <a href="https://github.com/UsmanSardar123/weather-forecast-app" class="card project-card">
                     <div class="project-header">
-                        <span class="project-type">Data Science</span>
+                        <span class="project-type">Mobile App</span>
                         <span class="project-arrow">↗</span>
                     </div>
-                    <h4 class="project-title">Project Beta</h4>
+                    <h4 class="project-title">Weather Forecast App</h4>
                     <p class="project-desc">
-                        Demonstrate breadth across different domains. A data analysis or automation 
-                        project that showcases Python skills.
+                        A real-time weather app consuming the OpenWeatherMap REST API, built with Clean 
+                        Architecture and the Repository Pattern with dynamic UI theming.
                     </p>
                     <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Pandas</span>
-                        <span class="project-tag">ML</span>
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">REST API</span>
+                        <span class="project-tag">OpenWeatherMap</span>
                     </div>
-                </div>
-                <div class="card project-card">
-                    <div class="project-header">
-                        <span class="project-type">Web App</span>
-                        <span class="project-arrow">↗</span>
-                    </div>
-                    <h4 class="project-title">Project Gamma</h4>
-                    <p class="project-desc">
-                        A web project showing versatility. Could be a dashboard, tool, or academic 
-                        capstone project — real scope, real impact.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">React</span>
-                        <span class="project-tag">Node.js</span>
-                        <span class="project-tag">MongoDB</span>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -1676,124 +1688,28 @@
             <h2>What I Work With</h2>
             <div class="skills-grid">
                 <div class="card skill-group">
-                    <div class="skill-group-label">// mobile development</div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Flutter</span>
-                            <span class="skill-percent">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Dart</span>
-                            <span class="skill-percent">88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">React Native</span>
-                            <span class="skill-percent">62%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 62%;"></div>
-                        </div>
-                    </div>
+                    <div class="skill-group-label">// languages</div>
+                    <span class="tag">Dart</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
                 </div>
                 <div class="card skill-group">
-                    <div class="skill-group-label">// backend &amp; cloud</div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Firebase</span>
-                            <span class="skill-percent">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">REST APIs</span>
-                            <span class="skill-percent">82%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 82%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Node.js</span>
-                            <span class="skill-percent">64%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 64%;"></div>
-                        </div>
-                    </div>
+                    <div class="skill-group-label">// frameworks</div>
+                    <span class="tag tag-cyan">Flutter</span>
+                    <span class="tag tag-cyan">React</span>
+                    <span class="tag tag-cyan">Node.js</span>
                 </div>
                 <div class="card skill-group">
-                    <div class="skill-group-label">// ai &amp; data</div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">AI APIs</span>
-                            <span class="skill-percent">78%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 78%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Python</span>
-                            <span class="skill-percent">72%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 72%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Analytics</span>
-                            <span class="skill-percent">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
+                    <div class="skill-group-label">// cloud &amp; databases</div>
+                    <span class="tag tag-pink">Firebase</span>
+                    <span class="tag tag-pink">Firestore</span>
+                    <span class="tag tag-pink">MongoDB</span>
                 </div>
                 <div class="card skill-group">
-                    <div class="skill-group-label">// tools</div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Git / GitHub</span>
-                            <span class="skill-percent">86%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 86%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">Figma</span>
-                            <span class="skill-percent">66%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 66%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span class="skill-name">VS Code</span>
-                            <span class="skill-percent">92%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%;"></div>
-                        </div>
-                    </div>
+                    <div class="skill-group-label">// ai &amp; tools</div>
+                    <span class="tag tag-purple">REST APIs</span>
+                    <span class="tag tag-purple">Git</span>
+                    <span class="tag tag-purple">Figma</span>
                 </div>
             </div>
         </div>
@@ -1811,11 +1727,11 @@
                     <div class="card education-card">
                         <div class="education-card-label">// education</div>
                         <div class="timeline-item">
-                            <div class="timeline-degree">B.Sc. Software Engineering</div>
-                            <div class="timeline-uni">Your University Name</div>
-                            <div class="timeline-year">2021 – 2025 (Expected)</div>
+                            <div class="timeline-degree">BS Software Engineering</div>
+                            <div class="timeline-uni">COMSATS University Islamabad (Wah Campus)</div>
+                            <div class="timeline-year">2022 – 2026</div>
                             <div class="timeline-details">
-                                GPA: X.XX / 4.0 · Relevant coursework: Data Structures &amp; Algorithms, 
+                                Relevant coursework: Data Structures &amp; Algorithms, 
                                 Software Architecture, Databases, HCI, Operating Systems
                             </div>
                         </div>
@@ -1908,9 +1824,9 @@
                 <a href="mailto:usmansardar037@gmail.com" class="card contact-link">
                     <span class="contact-emoji">✉️</span>
                     <span class="contact-label">Email</span>
-                    <span class="contact-value">usmansardar037@gmailemail.com</span>
+                    <span class="contact-value">usmansardar037@gmail.com</span>
                 </a>
-                <a href="#" class="card contact-link">
+                <a href="https://linkedin.com/in/usman-ayaz-2ab0b1266" class="card contact-link">
                     <span class="contact-emoji">💼</span>
                     <span class="contact-label">LinkedIn</span>
                     <span class="contact-value">Usman Ayaz</span>
@@ -1933,8 +1849,8 @@
         <div class="footer-credit">Built with intention · Designed for impact</div>
         <div class="footer-links">
             <a href="https://github.com/UsmanSardar123">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Email</a>
+            <a href="https://linkedin.com/in/usman-ayaz-2ab0b1266">LinkedIn</a>
+            <a href="mailto:usmansardar037@gmail.com">Email</a>
         </div>
     </footer>
 
@@ -1982,26 +1898,6 @@
             observer.observe(el);
         });
 
-        // SKILL BARS ANIMATION
-        const skillObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const progressBars = entry.target.querySelectorAll('.skill-progress');
-                    progressBars.forEach(bar => {
-                        const width = bar.style.width;
-                        bar.style.width = '0';
-                        setTimeout(() => {
-                            bar.style.width = width;
-                        }, 100);
-                    });
-                    skillObserver.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.skill-group').forEach(group => {
-            skillObserver.observe(group);
-        });
     </script>
 </body>
 </html>
